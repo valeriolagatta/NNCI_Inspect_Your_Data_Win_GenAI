@@ -15,9 +15,7 @@ DATA
 The files in the folder I have connected. Treat them as one dataset.
 
 WHAT I ALREADY KNOW  (optional, leave empty if you know nothing)
-[ Anything you have been told or believe about this data: where it came from,
-  what one row is supposed to be, what a particular column means, what it was
-  collected for, anything you already suspect is wrong with it. ]
+[ Anything you have been told or believe about this data. ]
 
 DO THIS
 1. For each file: how many rows, how many columns, what one row represents.
