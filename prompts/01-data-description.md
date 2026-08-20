@@ -38,7 +38,7 @@ DO THIS
    anything here that could easily be misread.
 
 SHOW YOUR WORKING
-- Save the document itself as data_description.md in this folder. Do not
+- Save the document itself as 01_data_description.md in this folder. Do not
   only print it in the chat.
 - Save your code as a separate file, named exactly describe_data.py.
 - Do NOT paste the whole script into the document. Instead include a section
