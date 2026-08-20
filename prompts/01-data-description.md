@@ -40,7 +40,7 @@ DO THIS
 SHOW YOUR WORKING
 - Save the document itself as 01_data_description.md in this folder. Do not
   only print it in the chat.
-- Save your code as a separate file, named exactly describe_data.py.
+- Save your code as a separate file, named exactly 01_describe_data.py.
 - Do NOT paste the whole script into the document. Instead include a section
   called "How to run this": what needs installing, the exact command, roughly
   how long it takes, and what it prints.
