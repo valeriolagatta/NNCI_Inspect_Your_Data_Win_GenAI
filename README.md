@@ -10,7 +10,7 @@ Two ways, and they end in the same place: this repository, unzipped into a folde
 
 **By hand.** Use the green **Code** button above, choose **Download ZIP**, and unzip it somewhere you will be able to find again. That folder is what you connect to your assistant.
 
-**Or let the assistant do it.** `prompts/00-download-material.md` is a prompt that asks it to fetch this repository and put the files in your working folder. Paste it into a tool that can write files, such as Claude's Cowork mode, and check the folder listing it prints at the end. It needs network access from that task, so it will not work everywhere. If it stalls, download the ZIP and move on. There is a [worked example of this download]([https://claude.ai/share/f6040ad9-fa5f-4035-9ff9-ec95bc732744]) if you want to see what it looks like when it goes well.
+**Or let the assistant do it.** `prompts/00-download-material.md` is a prompt that asks it to fetch this repository and put the files in your working folder. Paste it into a tool that can write files, such as Claude's Cowork mode, and check the folder listing it prints at the end. It needs network access from that task, so it will not work everywhere. If it stalls, download the ZIP and move on. There is a [worked example of this download](https://claude.ai/share/f6040ad9-fa5f-4035-9ff9-ec95bc732744) if you want to see what it looks like when it goes well.
 
 ## Contents
 
