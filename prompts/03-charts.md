@@ -34,11 +34,6 @@ Then list the folder so I can see every file exists, and stop.
 IF I ASK FOR A CHANGE
 Change only the thing I named. Keep every other chart identical, including
 its file name, and update 03_make_charts.py and 03_charts.md to match.
-
-DO NOT
-- Do not interpret the charts or tell me what they mean.
-- Do not invent data. If what I asked for is not in the file, say so.
-- Do not make more than six charts in one go.
 ```
 
 ## Writing the request
@@ -62,5 +57,3 @@ DO NOT
 Keep the naming block. Left to itself the skill saves under a name it chooses, in whatever directory it happens to be working in, which is fine for one person exploring and hopeless for anyone comparing notes or looking for a file later.
 
 Keep the change rule. Without it, asking for one edit tends to regenerate everything, with new file names, and the slide you had already made now points at an image that no longer exists.
-
-Delete the DO NOT block only when you know why each line is there. Every one of them cancels a specific habit the skill has: interpreting, comparing, suggesting next steps, and filling gaps rather than reporting them.
