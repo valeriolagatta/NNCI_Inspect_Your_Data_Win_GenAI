@@ -54,27 +54,11 @@ Open the file and read it once. It is worth knowing what you are getting for fre
 
 ## Reading the review
 
-**The verdict is the least useful line in the file.** Three words at the top, and everything that matters is underneath them. Read the issues and the last section first, then decide for yourself whether the verdict was earned.
-
 **Check that each issue names a step.** That is what makes this a pipeline review rather than four opinions. An issue introduced during cleaning and still affecting the dashboard is a real finding: a decision you made in two seconds is holding up a page you would have sent to somebody. An issue with no step attached is usually a general remark dressed as a finding.
-
-**Treat "verified" as unverified unless a number is shown.** The spot-check section should contain recomputed figures, not reassurances. If it says a card checks out without saying what it computed, it computed nothing.
 
 **Read "what I could not check" as the honest part of the report.** A review of eight files that claims to have checked everything has checked less than a review that names three things it could not reach.
 
-**Watch for statistical language nobody asked for.** The skill's trap catalogue mentions significance and multiple testing, and its sibling skill knows the whole apparatus, so a review may start talking about p-values. If it does, translate it: how big is the difference, how much do the groups overlap, and how many cases are in each. If you would rather it never came up, add a line to the prompt forbidding significance testing.
-
 **Disagree with one finding on purpose.** Pick something you think it got wrong, say so, and watch what happens. A reviewer that folds the moment you push back was never a second opinion. The whole value of this step is that it holds a position you would rather it did not.
-
-## When the review contradicts your own work
-
-Two collisions are likely, and neither is a fault.
-
-`validate-data` checks charts against a rule about axes: start at zero, no truncated or distorted scales. Your dashboard has a compressed-scale option, because one column spans several orders of magnitude and a plain scale makes every other account look identical. The resolution is a judgment you make and record: a 400-fold range needs a compressed scale to be legible, a compressed scale needs a label saying so, and a reader who misses the label will misread the chart.
-
-Its presentation checklist also says chart titles should state the insight rather than the metric. The chart prompt says the opposite, because a title that states an insight is doing interpretation. Both are defensible, they were written for different jobs, and choosing between them is your call rather than the tool's.
-
-Whichever way you go, the reason belongs in the notes, and "the validator told me to" is not a reason.
 
 ## The limit of this step
 
@@ -82,22 +66,12 @@ The reviewer is the same kind of system that did the work. It has the same tende
 
 What this step genuinely buys you is coverage: a written checklist gets applied to your work, in order, without getting bored. That is worth having, and it is not the same as assurance.
 
-So three human checks survive it, and they are the ones to keep.
-
-Recompute one number yourself, by hand or in a spreadsheet, and see whether you get the same answer.
-
-Show it to somebody who knows the subject rather than the data. They will question the framing, which no checklist does.
-
-And when you share it, state the caveats out loud, in your own words, rather than leaving them in a file nobody opens.
-
 ## Notes on changing it
 
 Keep the pipeline instructions. They are the only part the skill does not already know, and without them you get four separate opinions instead of a chain of custody.
 
-Keep "what I could not check". It is the one section a confident model would never write unprompted.
+Keep "what I could not check". It is the one section a confident model would hardly write unprompted.
 
 Keep "report, do not fix". A reviewer that edits your files leaves you with no way to see what it disagreed with.
-
-Keep "plain English, define your terms". The skill is written for business analysts and will otherwise talk about MAU, ARR and churn to a room that does not use those words.
 
 If you find yourself adding much more than this, check the skill file first. Most of what you are about to write is probably already in it.
