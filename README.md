@@ -4,7 +4,18 @@ Five prompts for looking at a dataset with a general-purpose AI assistant. They 
 
 The prompts follow one dataset from first sight to something a colleague could read: describe it, decide what to do about its problems, look at its shape, build something for an audience, then have the whole chain reviewed. The five steps are a plain-language adaptation of the data science workflow in Wickham, Çetinkaya-Rundel and Grolemund, *R for Data Science*, 2nd edition (O'Reilly, 2023).
 
+## Getting the material
+
+Two ways, and they end in the same place: this repository, unzipped into a folder on your machine.
+
+**By hand.** Use the green **Code** button above, choose **Download ZIP**, and unzip it somewhere you will be able to find again. That folder is what you connect to your assistant.
+
+**Or let the assistant do it.** `prompts/00-download-material.md` is a prompt that asks it to fetch this repository and put the files in your working folder. Paste it into a tool that can write files, such as Claude's Cowork mode, and check the folder listing it prints at the end. It needs network access from that task, so it will not work everywhere. If it stalls, download the ZIP and move on. There is a [worked example of this download]([CHAT_URL](https://claude.ai/share/f6040ad9-fa5f-4035-9ff9-ec95bc732744)) if you want to see what it looks like when it goes well.
+
 ## Contents
+
+`prompts/00-download-material.md`
+Optional, and about this repository rather than about your data. Asks the assistant to fetch these files and put them in your folder, then list what it wrote so you can see it worked.
 
 `prompts/01-data-description.md`
 The assistant describes what is in the files: every column, what it means, how the files relate, and everything already wrong with them. It is instructed not to fix anything and not to draw conclusions. Ends with a numbered list of the decisions you have to make before the data can be used. There is an optional block where you write what you already believe about the data, and every claim in it comes back checked against the files.
