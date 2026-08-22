@@ -1,6 +1,6 @@
 # 1. What do I have, and what is wrong with it?
 
-Use this first, on any dataset you have not described yet, before you clean anything and before you ask anything interesting. The AI reads the files and produces a written description of them: what is in each one, what every column means, how the files relate, what is already broken, and a numbered list of the decisions you will have to make before the data can be used. It writes that description to `01_data_description.md` and the code behind it to `01_describe_data.py`, so both are on disk rather than lost in a chat window.
+Use this first, on any dataset you have not described yet, before you clean anything and before you ask anything interesting. The AI reads the files and produces a written description of them: what is in each one, what every column means, how the files relate, what is already broken, and a numbered list of the decisions you will have to make before the data can be used. It writes that description to `01_data_description.html` and the code behind it to `01_describe_data.py`, so both are on disk rather than lost in a chat window.
 
 Connect the folder holding your files, then paste the whole thing. The `WHAT I ALREADY KNOW` block is optional: fill it in if you have been told something about the data, leave it empty if you have not. Budget ten minutes to run and twenty to read the output properly.
 
@@ -36,7 +36,7 @@ DO THIS
    anything here that could easily be misread.
 
 SHOW YOUR WORKING
-- Save the document itself as 01_data_description.md in this folder. Do not
+- Save the document itself as 01_data_description.html in this folder. Do not
   only print it in the chat.
 - Save your code as a separate file, named exactly 01_describe_data.py.
 - Do NOT paste the whole script into the document. Instead include a section
@@ -58,7 +58,7 @@ Only include decisions where a reasonable person could choose differently.
 Anything with one obviously correct answer belongs in the problems section.
 
 OUTPUT
-Markdown. Real tables, not lists pretending to be tables. Plain English, and
+HTML. Real tables, not lists pretending to be tables. Plain English, and
 define any technical word the first time it appears. In this order: files,
 columns, relationships, sample rows, problems, what I told you checked,
 things I am not sure about, how to run this, decisions I need to make before
@@ -72,7 +72,7 @@ DO NOT
 - Do not treat anything I told you as verified. Check it.
 ```
 
-Keep `01_data_description.md`. The next prompt works from its "Decisions I need to make before cleaning" section, so do not delete it or move it out of the folder.
+Keep `01_data_description.html`. The next prompt works from its "Decisions I need to make before cleaning" section, so do not delete it or move it out of the folder.
 
 ## Reading the output
 
